@@ -1,13 +1,24 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
-import AnimatedTiming from './Animations/AnimatedTiming';
+import {View, Text, StyleSheet, NavigatorIOS} from 'react-native';
+import Main from './Main';
 
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
-      <View>
-        <AnimatedTiming />
-      </View>
+        <NavigatorIOS
+          style={styles.container}
+          initialRoute={{
+            title: 'React Native Animations',
+            component: Main
+          }}
+        />
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#111111',
+  },
+});

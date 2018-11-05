@@ -11,7 +11,7 @@ export default class AnimatedRotationInterpolate extends Component {
 
   componentDidMount() {
     Animated.timing(this.animatedValue, {
-      toValue: 150,
+      toValue: 1,
       duration: 1500
     }).start();
   }
@@ -23,7 +23,7 @@ export default class AnimatedRotationInterpolate extends Component {
     });
     const animatedStyle = {
       transform: [
-        { rotate: this.interpolateRotation }
+        { rotate: interpolateRotation }
       ]
     };
     return (

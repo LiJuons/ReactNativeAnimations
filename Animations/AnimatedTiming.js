@@ -12,8 +12,8 @@ export default class AnimatedTiming extends Component {
   componentDidMount() {
     Animated.timing(this.animatedValue, {
       toValue: .3,
-      duration: 1000,
-      easing: Easing.bounce
+      duration: 1500,
+      easing: Easing.linear
     }).start();
   }
 

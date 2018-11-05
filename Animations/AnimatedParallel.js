@@ -14,10 +14,10 @@ export default class AnimatedRotationInterpolate extends Component {
     Animated.parallel([
       Animated.timing(this.animatedValue1, {
         toValue: 500,
-        duration: 1500
+        duration: 1000
       }),
       Animated.spring(this.animatedValue2, {
-        toValue: 3
+        toValue: .5
       })
     ]).start();
   }
@@ -40,11 +40,11 @@ export default class AnimatedRotationInterpolate extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row"
+    alignItems: 'center',
   },
   box: {
     backgroundColor: '#333',
-    flex: 1,
-    marginHorizontal: 5
-  },
+    width: 100,
+    height: 100,
+  }
 })

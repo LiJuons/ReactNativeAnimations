@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View, Animated, Dimesions} from 'react-native';
+import {StyleSheet, Text, View, Animated, Dimensions} from 'react-native';
 
-const {height} = Dimenstions.get("window");
+const {height} = Dimensions.get("window");
 export default class AnimatedRotationInterpolate extends Component {
 
   //Staggering animations (giving each of them different timing)
